@@ -1,5 +1,5 @@
 
-const url = "http://3.84.25.111:3000/api/pedido/";
+const url = "http://localhost:3000/api/pedido/";
 let resultados = '';
 const formArticulo = document.querySelector("form");
 const userped = document.getElementById("USERPED");
