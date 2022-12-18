@@ -13,6 +13,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="resources/css/styles.css">
+	<link rel="stylesheet" href="resources/css/estilos.css">
+
 </head>
 
 <body>
@@ -269,27 +272,27 @@
 
     <section><center>
     <h1 id="lamatricula" class="color-acento">MATRÍCULA</h1>
-        <div class="matriculate-contenedor" id="order">
-            <div id="form" class="row">
-                <form class="form">
-                    <div class="inputBox">
-                        <label class="textmatricula">Nombre Completo: *</label>
-                        <input id="USERPED" placeholder="Nombre" type="text" class="form-control" ><br><br>
-                        <label class="textmatricula">Correo Electrónico: *</label>
-                        <input id="EMAUSPED" placeholder="Correo" type="text" class="form-control" />
-                    </div><br>
-                    <div class="inputBox">
-                        <label class="textmatricula">Nro. de Celular: *</label>
-                        <input id="CELUSPED" placeholder="Celular" type="text" class="form-control"/><br><br>
-                        <label class="textmatricula">Pedido: *</label>
-                        <input id="FOODPED" placeholder="Pedido" type="text" class="form-control"  />
-                    </div><br>
-                    <label class="textmatricula">Mensaje: *</label>
-                    <textarea id="MSGPED" placeholder="Mensaje" cols="30" rows="10" class="form-control" ></textarea><br><br><br>
-                    <button id="btnCrear" type="submit" class="btn btn-secondary">
-                        ENVIAR
-                    </button>
-                </form>
+    <div id="overview">
+    	<section class="order" id="order">
+        	<div id="form" class="row">
+            	<form class="form">
+                	<div class="inputBox">
+                    	<input id="USERPED" placeholder="Nombre" type="text" class="form-control" />
+                    	<input id="EMAUSPED" placeholder="Correo" type="text" class="form-control" />
+                	</div>
+                	<div class="inputBox">
+                    	<input id="CELUSPED" placeholder="Celular" type="text" class="form-control" />
+                    	<input id="ASUPED" placeholder="Asunto" type="text" class="form-control" />
+                	</div>
+                	<textarea id="MSGPED" placeholder="Mensaje" cols="30" rows="10" class="form-control"></textarea>
+                	<button id="btnCrear" type="submit" class="btn btn-secondary">
+                    	Ordenar ahora
+                	</button>
+            	</form>
+        	</div>
+    	</section>
+	</div>
+                <!-- Términos y condiciones -->
                 <p class="terminos">Al dar click en el siguiente botón usted acepta los terminos y condiciones del Instituto Educativo.</p>
                 <button id="openterm" class="botonterminos">Acepto</button>
                 <div id="modalterm_container" class="modalterm-container">
@@ -300,9 +303,8 @@
                         ducimus maxime totam nulla fuga odio non aperiam eos?</p>
                       <a id="closeterm" class="terminarboton">Cerrar</a>
                     </div>
-                  </div>
-            </div>
-        </div></center>
+                </div>
+        </center>
     </section>
     
     <footer id="footer">
@@ -344,6 +346,8 @@
     </footer>
 <script src="./conexiondb/registro.js"></script>
 <script src="js/script.js"></script>
+<script src="resources/js/bootstrap.bundle.min.js"></script>
+<script src="resources/registro.js"></script>
 </body>
 
 </html>
