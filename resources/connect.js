@@ -7,10 +7,10 @@ app.use(express.json());
 app.use(cors());
 
 var conexion = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "landing_page3",
+  host: "3.83.42.117",
+  user: "omarlopez",
+  password: "lopez",
+  database: "landing_pagesb",
 });
 
 
